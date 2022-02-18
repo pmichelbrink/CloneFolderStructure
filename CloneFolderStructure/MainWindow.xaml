@@ -30,8 +30,8 @@
             <Label Grid.Column="3" VerticalContentAlignment="Bottom">Destination:</Label>
             <TextBox x:Name="txtDest" Grid.Column="4" MinWidth="200" Height="20" VerticalContentAlignment="Bottom"></TextBox>
             <Button x:Name="btnDestBrowse" Grid.Column="5" Margin="5,0" Padding="5,0" Height="20" Click="btnDestBrowse_Click">...</Button>
-            <Button x:Name="btnClone" Grid.Column="6" Margin="5,0" Padding="5,0" Height="20" Click="btnClone_Click">Clone</Button>
-            <Button x:Name="btnCancel" Grid.Column="7" Margin="5,0" Padding="5,0" Height="20" Click="btnCancel_Click">Cancel</Button>
+            <Button x:Name="btnClone" IsDefault="True" Grid.Column="6" Margin="5,0" Padding="5,0" Height="20" Click="btnClone_Click">Clone</Button>
+            <Button x:Name="btnCancel" IsCancel="True" Grid.Column="7" Margin="5,0" Padding="5,0" Height="20" Click="btnCancel_Click">Cancel</Button>
         </Grid>
         <StackPanel Grid.Row="1" Orientation="Horizontal">
             <Label Margin="5">Files:</Label>

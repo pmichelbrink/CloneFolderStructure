@@ -43,6 +43,18 @@ namespace CloneFolderStructure
         {
             txtHistory.Text = string.Empty;
 
+            if (string.IsNullOrEmpty(txtSource.Text))
+            {
+                MessageBox.Show("Enter a source path.");
+                return;
+            }
+
+            if (string.IsNullOrEmpty(txtDest.Text))
+            {
+                MessageBox.Show("Enter a destination path.");
+                return;
+            }
+
             File.WriteAllText(_logPath, $"Clone started at {DateTime.Now}" + Environment.NewLine);
 
             DirectoryInfo sourceFolder = new DirectoryInfo(txtSource.Text);
